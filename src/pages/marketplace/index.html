@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="Universal Character Set Transformation Format 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace | Aura Spatial</title>
+    <!-- Importing typography from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Main Navigation Header -->
+    <header class="platform-header">
+        <div class="header-container">
+            <div class="branding">
+                <a href="/index.html" class="logo">Aura Spatial</a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="nav-links">
+                    <li><a href="/src/pages/marketplace/index.html" class="active">Explore</a></li>
+                    <li><a href="/project-status">Status of My Project</a></li>
+                    <li><a href="/membership">Membership/Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="marketplace-core">
+        <!-- Filter Sidebar -->
+        <aside class="filter-panel">
+            <section class="filter-group">
+                <h3 class="filter-title">Product Category</h3>
+                <ul class="filter-options" id="category-filters">
+                    <li><button class="filter-button active" data-category="all">All Items</button></li>
+                    <li><button class="filter-button" data-category="sofas">Sofas</button></li>
+                    <li><button class="filter-button" data-category="tables">Tables</button></li>
+                    <li><button class="filter-button" data-category="chairs">Chairs</button></li>
+                    <li><button class="filter-button" data-category="storage">Storage</button></li>
+                    <li><button class="filter-button" data-category="beds">Beds</button></li>
+                </ul>
+            </section>
+
+            <section class="filter-group">
+                <h3 class="filter-title">Design Theme</h3>
+                <ul class="filter-options" id="theme-filters">
+                    <li><button class="filter-button active" data-theme="industrial">Industrial Foundry Loft</button></li>
+                    <li><button class="filter-button" data-theme="japandi">Japandi</button></li>
+                    <li><button class="filter-button" data-theme="mid-century">Mid-Century Modern</button></li>
+                    <li><button class="filter-button" data-theme="biophilic">Biophilic Sanctuary</button></li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Product Display Grid -->
+        <section class="product-gallery">
+            <div class="gallery-header">
+                <h1 class="gallery-title">New Arrivals</h1>
+                <p class="gallery-description">Curated furniture selections for your home layouts.</p>
+            </div>
+            
+            <div class="product-grid" id="product-grid">
+                <!-- Product cards will be dynamically injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Procurement Action Notification -->
+    <div id="procurement-notification" class="notification hidden">
+        Item added to procurement list.
+    </div>
+
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
